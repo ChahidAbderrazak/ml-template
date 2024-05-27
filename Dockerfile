@@ -25,4 +25,4 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 # Run the software
 EXPOSE 8080
 # CMD ["ls", "-a"]
-CMD ["uvicorn", "src.webapp:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["uvicorn", "webapp:app", "--host", "0.0.0.0", "--port", "8080"]
