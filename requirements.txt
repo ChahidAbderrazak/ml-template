@@ -1,0 +1,38 @@
+
+######## Web API packages
+fastapi 
+uvicorn
+python-multipart
+Flask==2.2.0
+
+##### preprocessing packages
+opencv-python-headless 
+# opencv-python
+opencv-contrib-python==4.1.2.30
+
+##### Deep learning packages
+torch==1.13.1
+torchvision==0.14.1
+torchviz==0.0.2
+
+##### Core algorithms packages
+geopandas==0.12.2
+nuscenes_devkit==1.1.9
+osmnx==1.1.2
+uvicorn
+scikit_learn==1.1.1
+Shapely==1.7.1
+
+##### General packages
+PyYAML==6.0.1
+pandas==1.4.3
+Pillow==10.3.0
+progressbar33==2.4
+psutil==5.9.4
+matplotlib==3.5.2
+numpy==1.21.6
+seaborn==0.11.2
+typing-extensions==4.5.0
+
+## testing 
+pytest
