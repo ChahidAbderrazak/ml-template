@@ -2,7 +2,7 @@
 
 This project is the visualization of the HAIS-GUI inspection report using a webapp user interface
 <p align="center">
-<img  src="files/hais-webapp.png" alt="alt text" width="512" >
+<img  src="src/files/hais-webapp.png" alt="alt text" width="512" >
  </p>
 <p align="center">
 Figure: Illustration of the HAIS visualization web server
@@ -11,7 +11,7 @@ Figure: Illustration of the HAIS visualization web server
 The HAIS-GUI processed the data collected using the inspection nodes mounted on a car as follows: 
 
 <p align="center">
-<img  src="files/hais-system.png" alt="alt text" width="512" >
+<img  src="src/files/hais-system.png" alt="alt text" width="512" >
  </p>
 <p align="center">
 Figure: Illustration of the HAIS-system
@@ -20,7 +20,7 @@ Figure: Illustration of the HAIS-system
 
 The proposed road inspection solution is based computer vision and digital image processing technique. This algorithm   processes sensors data  and detects the potential road damages and conditions:
 <p align="center">
-<img  src="files/HAIS-Algorithm-Flowchart.jpg" alt="alt text" width="512" >
+<img  src="src/files/HAIS-Algorithm-Flowchart.jpg" alt="alt text" width="512" >
 </p>
 <p align="center">
 Figure: The road inspection algorithms flowchart
@@ -52,7 +52,7 @@ kaggle datasets download -d abderrazakchahid1/sample-data-hais
 
 **NB** : Please make sure you extract the downladed zip file to the in the root folder:
 <p align="center">
-<img  src="files/data-sample.png" alt="alt text" width="200" >
+<img  src="src/files/data-sample.png" alt="alt text" width="200" >
  </p>
 <p align="center">
 Figure: folder structure after extracting the data
