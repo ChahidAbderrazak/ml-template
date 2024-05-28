@@ -1,7 +1,5 @@
 pipeline {
-    // agent any
-    agent { docker { image 'pyton:3.8' } }
-
+    agent any
     // triggers {
     //     pollSCM '* * * * *'
     // }
