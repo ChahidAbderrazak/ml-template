@@ -8,7 +8,7 @@ Flask==2.2.0
 ##### preprocessing packages
 opencv-python-headless 
 # opencv-python
-opencv-contrib-python==4.1.2.30
+opencv-contrib-python>=4.1.2.30
 
 ##### Deep learning packages
 torch==1.13.1
