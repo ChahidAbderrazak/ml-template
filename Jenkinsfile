@@ -14,10 +14,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh '''
-                python3 --version
                 python --version
-                // python3 -m venv ./venv
-                // ./venv/bin/
                 pip install -r requirements.txt
 
                 '''
@@ -29,7 +26,6 @@ pipeline {
                 echo 'Testing..'
                 sh '''
                 cd tests
-                // ./venv/bin/
                 python -m pytest
                 '''
             }
