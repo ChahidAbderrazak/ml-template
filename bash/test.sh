@@ -7,10 +7,11 @@ DOCKER_IMG="${IMG_BUILDER}:${VERSION}"
 echo "root=$(pwd)"
 echo " ==> [Testing][Docker][${PROJECT_NAME}] running the code Unit-tests   ..." && echo ""
 
-docker run -it --rm \
-  -v $(pwd)/logs:/app/logs \
-  -v $(pwd)/src:/app/src \
-  -v $(pwd)/tests:/app/tests \
-  "${DOCKER_IMG}" sh -c " cd src && python -m pytest"
+# docker run -it --rm \
+#   -v $(pwd)/logs:/app/logs \
+#   -v $(pwd)/src:/app/src \
+#   -v $(pwd)/tests:/app/tests \
+#   "${DOCKER_IMG}" sh -c " cd src && python -m pytest"
 
-  #  "${DOCKER_IMG}" sh -c "python -m pytest > /app/logs/pytest.out"
+docker run -it --rm "${DOCKER_IMG}" sh -c "python -m pytest "
+#  docker run -it --rm "${DOCKER_IMG}" sh -c "python -m pytest > /app/logs/pytest.out"

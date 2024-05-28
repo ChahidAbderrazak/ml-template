@@ -1,17 +1,21 @@
 pipeline {
-    agent any
+    // agent any
 
+    agent {
+        // docker { image 'python:3.8' }
+        dockerfile { filename 'Dockerfile' }
+    }
     // triggers {
     //     pollSCM '* * * * *'
     // }
 
     stages {
+       
         stage('Build') {
             steps {
                 echo 'Building..'
                 sh '''
-                python3 -m venv ./venv
-                ./venv/bin/pip install -r requirements.txt
+                python --version
                 '''
             }
         }
@@ -21,9 +25,10 @@ pipeline {
                 echo 'Testing..'
                 sh '''
                 cd tests
-                ./venv/bin/python -m pytest
+                python -m pytest
                 '''
             }
         }
+
     }
 }
