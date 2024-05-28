@@ -15,7 +15,7 @@ pipeline {
                 echo 'Building..'
                 sh '''
                 python --version
-                pip install -r requirements.txt
+                sudo pip install -r requirements.txt
 
                 '''
             }
