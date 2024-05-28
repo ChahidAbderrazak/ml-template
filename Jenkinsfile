@@ -2,7 +2,8 @@ pipeline {
     // agent any
 
     agent {
-        docker { image 'python:3.8' }
+        // docker { image 'python:3.8' }
+        dockerfile { filename 'Dockerfile' }
     }
     // triggers {
     //     pollSCM '* * * * *'
@@ -15,8 +16,6 @@ pipeline {
                 echo 'Building..'
                 sh '''
                 python --version
-                sudo pip install -r requirements.txt
-
                 '''
             }
         }
