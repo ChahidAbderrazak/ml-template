@@ -3,17 +3,17 @@
 fastapi 
 uvicorn
 python-multipart
-Flask==2.2.0
+Flask  #==2.2.0
 
 ##### preprocessing packages
 opencv-python-headless 
 # opencv-python
-opencv-contrib-python>=4.1.2.30
+opencv-contrib-python  #>=4.1.2.30
 
 ##### Deep learning packages
-torch>=1.13.1
-torchvision>=0.14.1
-torchviz>=0.0.2
+torch  #>=1.13.1
+torchvision  #>=0.14.1
+torchviz  #>=0.0.2
 
 ##### Core algorithms packages
 geopandas  #==0.12.2
